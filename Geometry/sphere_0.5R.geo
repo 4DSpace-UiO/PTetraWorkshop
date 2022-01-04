@@ -1,33 +1,33 @@
-// I usually do steps 1-2 in a text editor, steps 3-10 in the Gmsh GUI.
+// I usually do steps 1-2 in a text editor, steps 3-11 in the Gmsh GUI.
 
 // STEP 1: SET VARIABLES
 
-debye = 0.00690;  // Electron debye length for n=1e11 and T=1000
-ri = 0.5*debye;   // Inner radius
-ro = ri+10*debye; // Outer radius
-reso = 1.5*debye; // Resolution on outer sphere
-resi = ri/5;      // Resolution on inner sphere
+debye = 0.00690; // Electron debye length for n=1e11 and T=1000
+r = 0.5*debye;   // Inner radius
+R = r+10*debye;  // Outer radius
+Res = 1.5*debye; // Resolution on outer boundary
+res = r/5;       // Resolution on inner boundary
 
 // STEP 2: PLACE POINTS (0D ENTITIES)
 
 // Center
-Point(1) = {0, 0, 0, reso};
+Point(1) = {0, 0, 0, Res};
 
-// Outer sphere
-Point(2) = {ro, 0, 0, reso};
-Point(3) = {0, ro, 0, reso};
-Point(4) = {0, 0, ro, reso};
-Point(5) = {-ro, 0, 0, reso};
-Point(6) = {0, -ro, 0, reso};
-Point(7) = {0, 0, -ro, reso};
+// Outer boundary
+Point(2) = {R, 0, 0, Res};
+Point(3) = {0, R, 0, Res};
+Point(4) = {0, 0, R, Res};
+Point(5) = {-R, 0, 0, Res};
+Point(6) = {0, -R, 0, Res};
+Point(7) = {0, 0, -R, Res};
 
-// Inner sphere
-Point(8) = {ri, 0, 0, resi};
-Point(9) = {0, ri, 0, resi};
-Point(10) = {0, 0, ri, resi};
-Point(11) = {-ri, 0, 0, resi};
-Point(12) = {0, -ri, 0, resi};
-Point(13) = {0, 0, -ri, resi};
+// Inner boundary
+Point(8) = {r, 0, 0, res};
+Point(9) = {0, r, 0, res};
+Point(10) = {0, 0, r, res};
+Point(11) = {-r, 0, 0, res};
+Point(12) = {0, -r, 0, res};
+Point(13) = {0, 0, -r, res};
 
 // STEP 3: CONNECT POINTS TO LINES AND ARCS (1D ENTITIES)
 
@@ -108,14 +108,17 @@ Physical Surface(2) = {9, 12, 11, 10};
 // Bottom segment of inner surface
 Physical Surface(3) = {13, 14, 15, 16};
 
+// STEP 7: CREATE A PHYSICAL GROUP FOR THE VOLUME
 
-// STEP 7: GENERATE 2D AND 3D MESH
+Physical Volume(4) = {1};
+
+// STEP 8: GENERATE 2D AND 3D MESH
 
 // Make sure both checkboxes starting with "Optimize quality of tetrahedra..."
 // is activated in Tools -> Options -> Mesh -> Advanced -> Optimize with
 // NetGen... is activated
 
-// STEP 9: INSPECT QUALITY 
+// STEP 10: INSPECT QUALITY 
 
 // Tools -> Statistics -> Mesh
 
@@ -135,12 +138,12 @@ Physical Surface(3) = {13, 14, 15, 16};
 // may be so small the simulation breaks. NetGen optimization is important for
 // good quality tetrahedra.
 
-// STEP 10: SAVE MESH TO sphere.msh
+// STEP 11: SAVE MESH TO *.msh
 
-// STEP 11: CONVERT MESH TO sphere.topo FOR USE WITH PTETRA
+// STEP 12: CONVERT MESH TO *.topo FOR USE WITH PTETRA
 
 // 1. Place a symlink to msh2topo in the Geometry folder
 // 2. Copy msh2topo.dat to the Geometry folder
 // 3. Enter the filename of the msh-file in msh2topo.dat
 // 4. Run msh2topo.dat
-// 5. Rename msh2topo.out to sphere.topo
+// 5. Rename msh2topo.out to *.topo
