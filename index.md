@@ -8,12 +8,14 @@ knowledge from start to end with at least one tool, PTetra.
 
 There will be three sessions, first with a presentation followed by some hands-on:
 
-- Session 1: 
+**Probable dates**: 25.01, 27.01, 01.02, 03.02
+
+- **Session 1**: 
   - Introduction to PTetra Workshop (by [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en))
   - Description of case studies and mesh generation with Gmsh (by [Dr. Sayan Adhikari, UiO, Norway](https://www.mn.uio.no/fysikk/english/people/aca/sadhi/index.html))
-- Session 2:
+- **Session 2**:
   - Introduction to PIC and simulations with PTetra.  (by [Prof. Richard Marchand, University of Alberta, Edmonton, Canada](https://sites.ualberta.ca/~rmarchan/) )
-- Session 3:
+- **Session 3**:
   - Post-processing, visualization with ParaView, and comparison with Langmuir library. (by [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en))
 
 ### Prerequisites
