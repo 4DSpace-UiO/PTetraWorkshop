@@ -24,8 +24,8 @@ There will be three sessions, first with a presentation followed by some hands-o
 
 - Access to a Unix/Linux machine
 - ``PTetra`` (must be compiled)
-- ``BLAS`` (must be compiled separately, and ``libblas.a`` moved to PTetra folder)
-- ``SPARSKIT2`` (must be compiled separately, and ``libskit.a`` moved to PTetra folder)
+- [``BLAS``](http://www.netlib.org/blas/) (must be compiled separately, and ``libblas.a`` moved to PTetra folder)
+- [``SPARSKIT2``](http://www-users.cs.umn.edu/~saad/software/SPARSKIT/SPARSKIT2.tar.gz) (must be compiled separately, and ``libskit.a`` moved to PTetra folder)
 - ``msh2topo`` (must be compiled, to be used together with ``PTetra``)
 - ``ParaView``
 - ``Gmsh``
