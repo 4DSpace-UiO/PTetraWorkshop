@@ -9,6 +9,7 @@ knowledge from start to end with at least one tool, PTetra.
 There will be three sessions, first with a presentation followed by some hands-on:
 
 **Probable dates**: 25.01, 27.01, 01.02, 03.02
+**TIme**: 15:00 - 17:00 CET
 
 - **Session 1**: 
   - Introduction to PTetra Workshop (by [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en))
