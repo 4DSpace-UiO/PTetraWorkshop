@@ -117,6 +117,23 @@ Create symbolic links for msh2topo
 ```bash
 ln -s msh2topo/msh2topo Geometry/
 ```
+### STEP - 6:
+Install Paraview
+
+#### Installing on Linux
+Download the installer for Linux preferably to $HOME
+[Link: ParaView-5.10.0-MPI-Linux-Python3.9-x86_64.tar.gz](https://www.paraview.org/paraview-downloads/download.php?submit=Download&version=v5.10&type=binary&os=Linux&downloadFile=ParaView-5.10.0-MPI-Linux-Python3.9-x86_64.tar.gz)
+
+#### Installing on macOS
+Download the installer for macOS.
+
+For macOS with M1 processor (ARM)
+[Link: ParaView-5.10.0-MPI-OSX11.0-Python3.9-arm64](https://www.paraview.org/paraview-downloads/download.php?submit=Download&version=v5.10&type=binary&os=macOS&downloadFile=ParaView-5.10.0-MPI-OSX11.0-Python3.9-arm64.pkg)
+
+For macOS with intel processor (x86_64)
+[Link: ParaView-5.10.0-MPI-Linux-Python3.9-x86_64](https://www.paraview.org/paraview-downloads/download.php?submit=Download&version=v5.10&type=binary&os=macOS&downloadFile=ParaView-5.10.0-MPI-OSX10.13-Python3.9-x86_64.pkg)
+
+Double click on the ``.pkg`` file to install.
 
 <!-- - Bulleted
 - List
