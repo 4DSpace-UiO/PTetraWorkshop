@@ -1,4 +1,4 @@
-## Welcome to PTetra Workshop
+# Welcome to PTetra Workshop
 
 ### Goal
 What we hope to achieve with this workshop is to give people a skill or tool they can actually use in research. We want them to have a working
@@ -20,7 +20,7 @@ There will be three sessions, first with a presentation followed by some hands-o
 - **Session 3**:
   - Post-processing, visualization with ParaView, and comparison with Langmuir library. (by [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en))
 
-### Prerequisites
+## Prerequisites
 
 - Access to a Unix/Linux machine
 - ``PTetra`` (must be compiled)
@@ -34,6 +34,50 @@ There will be three sessions, first with a presentation followed by some hands-o
   - ``Numpy``
   - ``Matplotlib``
   - ``Langmuir``
+
+## Installation
+
+### STEP - 1:
+Install ``Conda``
+
+#### Installing on Linux
+Download the Miniconda installer for Linux.
+```bash
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+```
+Run the installer and follow the interactive instruction.
+```bash
+bash Miniconda3-latest-Linux-x86_64.sh
+```
+#### Installing on macOS
+Download the Miniconda installer for macOS.
+```bash
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+```
+Run the installer and follow the interactive instruction.
+```bash
+bash Miniconda3-latest-MacOSX-x86_64.sh
+```
+
+### STEP - 2: 
+Clone the workshop repository
+```bash
+git clone https://github.com/4DSpace-UiO/PTetraWorkshop.git
+```
+Enter inside the repository
+```bash
+cd PTetraWorkshop
+```
+
+### STEP - 4: 
+Now create a conda environment using the given environment.yml file
+```bash
+conda env create -f environment.yml
+```
+Activate the conda environment
+```bash
+conda activate ptetra
+```
 
 <!-- - Bulleted
 - List
