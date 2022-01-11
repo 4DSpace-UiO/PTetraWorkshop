@@ -7,8 +7,10 @@ dependencies:
   - pip
   - numpy
   - openmpi-mpifort
-  - gfortran_osx-64
+  - libgfortran
   - gmsh
+  - openssl 
+  - gnupg
   - pip:
     - matplotlib
     - pandas
