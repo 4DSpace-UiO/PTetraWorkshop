@@ -1,12 +1,16 @@
 # Welcome to PTetra Workshop
 
+### About PTetra
+
+PTetra is an electrostatic, high performance PIC code intended for simulating spacecraft in their plasma environment, and that it's an unstructured code, which allows for highly flexible geometries.
+
 ### Goal
 What we hope to achieve with this workshop is to give people a skill or tool they can actually use in research. We want them to have a working
 knowledge from start to end with at least one tool, PTetra.
 
 ### Dates
 
-There will be three sessions, first with a presentation followed by some hands-on:
+There will be four sessions, first with a presentation followed by some hands-on:
 
 **Dates**: 
 1. 25.01.2022
@@ -24,7 +28,7 @@ There will be three sessions, first with a presentation followed by some hands-o
 - **Session 3**:
   - More about PTetra and hands-on (by [Prof. Richard Marchand, University of Alberta, Edmonton, Canada](https://sites.ualberta.ca/~rmarchan/) ), 01.02.2022, 15:00 - 16:00 CET
   - Introduction to HPC and demonstration of a typical PTetra run on HPCs (by [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)), 01.02.2022, 16:00 - 17:00 CET
-- **Session 3**:
+- **Session 4**:
   - Post-processing, visualization with ParaView, and comparison with Langmuir library (by [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)), 01.02.2022, 15:00 - 17:00 CET
 
 ## Prerequisites
@@ -141,16 +145,6 @@ For macOS with intel processor (x86_64)
 [Link: ParaView-5.10.0-MPI-Linux-Python3.9-x86_64](https://www.paraview.org/paraview-downloads/download.php?submit=Download&version=v5.10&type=binary&os=macOS&downloadFile=ParaView-5.10.0-MPI-OSX10.13-Python3.9-x86_64.pkg)
 
 Double click on the ``.pkg`` file to install.
-
-<!-- - Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
- [Link](url) and ![Image](src) -->
-
 
 
 ### Support or Contact
