@@ -8,17 +8,24 @@ knowledge from start to end with at least one tool, PTetra.
 
 There will be three sessions, first with a presentation followed by some hands-on:
 
-**Probable dates**: 25.01, 27.01, 01.02, 03.02
+**Dates**: 
+1. 25.01.2022
+2. 27.01.2022
+3. 01.02.2022
+4. 03.02.2022
 
 **Time**: 15:00 - 17:00 CET
 
 - **Session 1**: 
-  - Introduction to PTetra Workshop (by [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en))
-  - Description of case studies and mesh generation with Gmsh (by [Dr. Sayan Adhikari, UiO, Norway](https://www.mn.uio.no/fysikk/english/people/aca/sadhi/index.html))
+  - Introduction to PTetra Workshop and description of case studies (by [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)), 25.01.2022, 15:00 - 15:30 CET
+  - Mesh generation with Gmsh (by [Dr. Sayan Adhikari, UiO, Norway](https://www.mn.uio.no/fysikk/english/people/aca/sadhi/index.html)), 25.01.2022, 15:30 - 17:00 CET
 - **Session 2**:
-  - Introduction to PIC and simulations with PTetra.  (by [Prof. Richard Marchand, University of Alberta, Edmonton, Canada](https://sites.ualberta.ca/~rmarchan/) )
+  - Introduction to PIC and simulations with PTetra (by [Prof. Richard Marchand, University of Alberta, Edmonton, Canada](https://sites.ualberta.ca/~rmarchan/) ), 27.01.2022, 15:00 - 17:00 CET
 - **Session 3**:
-  - Post-processing, visualization with ParaView, and comparison with Langmuir library. (by [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en))
+  - More about PTetra and hands-on (by [Prof. Richard Marchand, University of Alberta, Edmonton, Canada](https://sites.ualberta.ca/~rmarchan/) ), 01.02.2022, 15:00 - 16:00 CET
+  - Introduction to HPC and demonstration of a typical PTetra run on HPCs (by [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)), 01.02.2022, 16:00 - 17:00 CET
+- **Session 3**:
+  - Post-processing, visualization with ParaView, and comparison with Langmuir library (by [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)), 01.02.2022, 15:00 - 17:00 CET
 
 ## Prerequisites
 
