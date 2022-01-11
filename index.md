@@ -110,29 +110,29 @@ cd ..
 ```
 Compile msh2topo
 ```bash
-cd PTetra/msh2topo
+cd msh2topo
 make
 cd ..
 ```
 Copy the linked libraries
 ```bash
-cp BLAS-3.10.0/blas_LINUX.a PTetra/MPI_V50i/libblas.a 
-cp SPARSKIT2/libskit.a PTetra/MPI_V50i/libskit.a 
+cp BLAS-3.10.0/blas_LINUX.a MPI_V50i/libblas.a 
+cp SPARSKIT2/libskit.a MPI_V50i/libskit.a 
 ```
 Compile PTetra
 ```bash
-cd PTetra/MPI_V50i
+cd MPI_V50i
 make
 cd ..
 ```
 ### STEP - 7:
 Create symbolic links for PTetra
 ```bash
-ln -s PTetra/MPI_V50i/mptetra ./
+ln -s MPI_V50i/mptetra ./
 ```
 Create symbolic links for msh2topo
 ```bash
-ln -s PTetra/msh2topo/msh2topo Geometry/
+ln -s msh2topo/msh2topo Geometry/
 ```
 ### STEP - 8:
 Install Paraview
