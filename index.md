@@ -90,7 +90,7 @@ Activate the conda environment
 conda activate ptetra
 ```
 ### STEP - 5:
-Extract source codes for PTetra. It will ask for a password, use the password shared on email.
+Extract the source codes for PTetra using the 7zip tool. It will ask for a password; use the password shared on email.
 ```bash
 7za x PTetra.zip
 ```
