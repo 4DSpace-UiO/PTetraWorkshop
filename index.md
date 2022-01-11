@@ -89,7 +89,12 @@ Activate the conda environment
 ```bash
 conda activate ptetra
 ```
-### STEP - 5: 
+### STEP - 5:
+Extract source codes for PTetra. It will ask for a password, use the password shared on email.
+```bash
+7za x PTetra.zip
+```
+### STEP - 6: 
 Compile BLAS
 ```bash
 cd BLAS-3.10.0
@@ -119,7 +124,7 @@ cd MPI_V50i
 make
 cd ..
 ```
-### STEP - 6:
+### STEP - 7:
 Create symbolic links for PTetra
 ```bash
 ln -s MPI_V50i/mptetra ./
@@ -128,7 +133,7 @@ Create symbolic links for msh2topo
 ```bash
 ln -s msh2topo/msh2topo Geometry/
 ```
-### STEP - 6:
+### STEP - 8:
 Install Paraview
 
 #### Installing on Linux
