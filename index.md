@@ -45,6 +45,7 @@ There will be four sessions, first with a presentation followed by some hands-on
   - ``Numpy``
   - ``Matplotlib``
   - ``Langmuir``
+- [Zoom Client for Meetings](https://zoom.us/download) (Download and install the appropriate version to have a smoother experience during the workshop)
 
 ## Installation
 
