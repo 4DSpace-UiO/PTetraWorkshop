@@ -9,8 +9,8 @@ dependencies:
   - openmpi-mpifort
   - libgfortran
   - gmsh
-  - openssl 
-  - gnupg
+  - openssl
+  - p7zip
   - pip:
     - matplotlib
     - pandas
