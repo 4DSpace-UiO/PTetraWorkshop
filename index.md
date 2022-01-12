@@ -128,7 +128,7 @@ cd ..
 ### STEP - 7:
 Create symbolic links for PTetra
 ```bash
-ln -s MPI_V50i/mptetra ./
+ln -s MPI_V50i/mptetra
 ```
 Create symbolic links for msh2topo
 ```bash
