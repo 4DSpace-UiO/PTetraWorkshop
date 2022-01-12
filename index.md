@@ -132,7 +132,9 @@ ln -s MPI_V50i/mptetra ./
 ```
 Create symbolic links for msh2topo
 ```bash
-ln -s msh2topo/msh2topo Geometry/
+cd Geometry
+ln -s ../msh2topo/msh2topo
+cd ..
 ```
 ### STEP - 8:
 Install Paraview
