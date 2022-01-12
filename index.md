@@ -29,7 +29,7 @@ There will be four sessions, first with a presentation followed by some hands-on
   - More about PTetra and hands-on (by [Prof. Richard Marchand, University of Alberta, Edmonton, Canada](https://sites.ualberta.ca/~rmarchan/) ), 01.02.2022, 15:00 - 16:00 CET
   - Introduction to HPC and demonstration of a typical PTetra run on HPCs (by [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)), 01.02.2022, 16:00 - 17:00 CET
 - **Session 4**:
-  - Post-processing, visualization with ParaView, and comparison with Langmuir library (by [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)), 01.02.2022, 15:00 - 17:00 CET
+  - Post-processing, visualization with ParaView, and comparison with Langmuir library (by [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)), 03.02.2022, 15:00 - 17:00 CET
 
 ## Prerequisites
 
