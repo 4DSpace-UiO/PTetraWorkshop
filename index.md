@@ -84,6 +84,9 @@ Run the installer and follow the interactive instruction.
 ```bash
 bash Miniconda3-latest-Linux-x86_64.sh
 ```
+```bash
+source ~/.bashrc
+```
 #### Installing on macOS
 Download the Miniconda installer for macOS.
 ```bash
@@ -92,6 +95,9 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 Run the installer and follow the interactive instruction.
 ```bash
 bash Miniconda3-latest-MacOSX-x86_64.sh
+```
+```bash
+source ~/.bash_profile
 ```
 
 ### STEP - 2: 
