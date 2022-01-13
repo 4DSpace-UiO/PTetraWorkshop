@@ -1,39 +1,60 @@
-# Welcome to PTetra Workshop
+# Welcome to the PTetra Workshop
+
+Universities already excel at teaching knowledge. In this workshop, however, we
+aim to teach you the *practical skills* necessary for applying simulations in
+your own space or plasma-related research. This will complement the theoretical
+background of the computational scientist, but there is also no reason for
+experimentalists or theorists to put up with uncertain assumptions. We believe
+you do not have to be a computational scientist to use simulations, in much the
+same way you don't have to be a theoretician to use equations. In this
+workshop, we provide you with a tool to complement your other methods, and to
+go beyond their limitations. Rather than giving a vague overview of many tools,
+we focus on providing working knowledge from beginning to end with one tool:
+PTetra.
 
 ### About PTetra
 
-PTetra is an electrostatic, high performance PIC code intended for simulating spacecraft in their plasma environment, and that it's an unstructured code, which allows for highly flexible geometries.
+PTetra is an electrostatic, high performance Particle-In-Cell (PIC) code, with
+support for complex geometries through the use of an unstructured mesh. Its
+main purpose is the study of spacecraft-environment interactions.
 
-### Goal
-What we hope to achieve with this workshop is to give people a skill or tool they can actually use in research. We want them to have a working
-knowledge from start to end with at least one tool, PTetra.
+Disclaimer: PTetra is prof. Richard Marchand's property, but is provided for
+the participants to use, with the belief that it will be instructive and
+useful. The correctness of the results obtained with PTetra relies in part on
+the skill of the user, and in any case, we take no responsibility for your
+results. Any use of PTetra leading to publication should cite the following two
+papers:
+
+[Marchand - PTetra, a Tool to Simulate Low Orbit Satellite-Plasma Interaction](https://doi.org/10.1109/TPS.2011.2172638)
+[Marchand, Lira - Kinetic Simulation of Spacecraft-Environment Interaction](https://doi.org/10.1109/TPS.2017.2682229)
 
 ### Dates
 
-There will be four sessions, first with a presentation followed by some hands-on:
+There will be three or four sessions, first with a presentation followed by some hands-on:
 
 **Dates**: 
 1. 25.01.2022
 2. 27.01.2022
-3. 01.02.2022
+3. 01.02.2022 (maybe)
 4. 03.02.2022
 
 **Time**: 15:00 - 17:00 CET
 
 - **Session 1**: 
-  - Introduction to PTetra Workshop and description of case studies (by [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)), 25.01.2022, 15:00 - 15:30 CET
+  - Introduction to the PTetra Workshop and description of case studies (by [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)), 25.01.2022, 15:00 - 15:30 CET
   - Mesh generation with Gmsh (by [Dr. Sayan Adhikari, UiO, Norway](https://www.mn.uio.no/fysikk/english/people/aca/sadhi/index.html)), 25.01.2022, 15:30 - 17:00 CET
 - **Session 2**:
   - Introduction to PIC and simulations with PTetra (by [Prof. Richard Marchand, University of Alberta, Edmonton, Canada](https://sites.ualberta.ca/~rmarchan/) ), 27.01.2022, 15:00 - 17:00 CET
-- **Session 3**:
-  - More about PTetra and hands-on (by [Prof. Richard Marchand, University of Alberta, Edmonton, Canada](https://sites.ualberta.ca/~rmarchan/) ), 01.02.2022, 15:00 - 16:00 CET
+- **Session 3** (maybe):
+  - More about PTetra (by [Prof. Richard Marchand, University of Alberta, Edmonton, Canada](https://sites.ualberta.ca/~rmarchan/) ), 01.02.2022, 15:00 - 16:00 CET
   - Introduction to HPC and demonstration of a typical PTetra run on HPCs (by [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)), 01.02.2022, 16:00 - 17:00 CET
 - **Session 4**:
-  - Post-processing, visualization with ParaView, and comparison with Langmuir library (by [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)), 03.02.2022, 15:00 - 17:00 CET
+  - Post-processing, visualization with ParaView, and comparison with the Langmuir library (by [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)), 03.02.2022, 15:00 - 17:00 CET
 
 ## Prerequisites
 
 - Access to a Unix/Linux machine
+- Git
 - ``PTetra`` (must be compiled)
 - [``BLAS``](http://www.netlib.org/blas/) (must be compiled separately, and ``libblas.a`` moved to PTetra folder)
 - [``SPARSKIT2``](http://www-users.cs.umn.edu/~saad/software/SPARSKIT) (must be compiled separately, and ``libskit.a`` moved to PTetra folder)
