@@ -1,5 +1,13 @@
 **.msh
 **.topo
 **alujlu.prcnd
-
+**.o
+**.a
+**msh2topo.out
+**.vtk
+**.rdm
+**fort.20
+**.hst
 .DS_Store
+MPI_V50i
+msh2topo
