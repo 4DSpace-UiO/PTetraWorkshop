@@ -172,6 +172,17 @@ Install Paraview
 Download the installer for Linux preferably to $HOME
 [Link: ParaView-5.10.0-MPI-Linux-Python3.9-x86_64.tar.gz](https://www.paraview.org/paraview-downloads/download.php?submit=Download&version=v5.10&type=binary&os=Linux&downloadFile=ParaView-5.10.0-MPI-Linux-Python3.9-x86_64.tar.gz)
 
+Extract the compressed installer.
+```bash
+tar -xvf ParaView-5.10.0-MPI-Linux-Python3.9-x86_64.tar.gz
+```
+Create an alias of the executable by adding the following line at the end of your ``.bashrc`` file
+```bash
+alias paraview='~/ParaView-5.10.0-MPI-Linux-Python3.9-x86_64/bin/paraview'
+```
+```bash
+source ~/.bash_profile
+```
 #### Installing on macOS
 Download the installer for macOS.
 
