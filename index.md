@@ -180,4 +180,4 @@ Double click on the ``.pkg`` file to install.
 
 ### Support or Contact
 
-Having trouble with setting up your machines? Join our [Slack workspace](https://join.slack.com/t/ptetraworkshop/shared_invite/zt-11do628gg-q~zkVBwJhbPE0wjtP99GOQ) and we’ll help you sort it out.
+Having trouble with setting up your machines? Join our [Slack workspace: PTetraWorkshop](https://ptetraworkshop.slack.com) and we’ll help you sort it out.
