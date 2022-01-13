@@ -18,15 +18,17 @@ PTetra is an electrostatic, high performance Particle-In-Cell (PIC) code, with
 support for complex geometries through the use of an unstructured mesh. Its
 main purpose is the study of spacecraft-environment interactions.
 
-Disclaimer: PTetra is prof. Richard Marchand's property, but is provided for
+![Cylinder](https://raw.githubusercontent.com/4DSpace-UiO/PTetraWorkshopInternal/master/Presentations/Introduction/cylinder.png?token=GHSAT0AAAAAABQOFJC77CIMET5DI5UI3USWYO774OQ)
+
+Disclaimer: PTetra is Prof. Richard Marchand's property, but is provided for
 the participants to use, with the belief that it will be instructive and
 useful. The correctness of the results obtained with PTetra relies in part on
 the skill of the user, and in any case, we take no responsibility for your
 results. Any use of PTetra leading to publication should cite the following two
 papers:
 
-[Marchand - PTetra, a Tool to Simulate Low Orbit Satellite-Plasma Interaction](https://doi.org/10.1109/TPS.2011.2172638)
-[Marchand, Lira - Kinetic Simulation of Spacecraft-Environment Interaction](https://doi.org/10.1109/TPS.2017.2682229)
+1. [Marchand - PTetra, a Tool to Simulate Low Orbit Satellite-Plasma Interaction](https://doi.org/10.1109/TPS.2011.2172638)
+2. [Marchand, Lira - Kinetic Simulation of Spacecraft-Environment Interaction](https://doi.org/10.1109/TPS.2017.2682229)
 
 ### Dates
 
