@@ -1,72 +1,57 @@
 #!/usr/bin/env python3
+"""
+Plotting script for PTetra workshop
+Author: Sigvald Marholm, 2022
+"""
 import sys
-import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import langmuir as l
-from frmt import print_table
-import re
-import os
+from funcs import *
+from argparse import ArgumentParser
 
-# READ HISTORY FILE
+parser = ArgumentParser(description="Plotting tool for PTetra workshop")
+parser.add_argument('folder', help='Folder to PTetra simulation')
+parser.add_argument('column', default='sc_i_tot', nargs='?', help='Which column of pictetra.hst to plot')
+parser.add_argument('-r', metavar='tau', type=float, default=1e-7, help='Relaxation time')
+parser.add_argument('--OML', action='store_true', help='Compare current with OML theory')
+parser.add_argument('--FL', action='store_true', help='Compare current with finite-length theory')
+args = parser.parse_args()
 
-column_names = [
-    'timestep',
-    'time',
-    'netot',
-    'nitot',
-    'Te_eff',
-    'pot1',
-    'sc_phi_0',
-    'sc_q_0',
-    'sc_i_0',
-    'sc_phi_1',
-    'sc_q_1',
-    'sc_i_1',
-]
+df = read_hst(args.folder)
+geometry, electron, voltages = parse_parameters(args.folder)
 
-hst_file = os.path.join(sys.argv[-1], 'pictetra.hst')
-dat_file = os.path.join(sys.argv[-1], 'pictetra.dat')
+av = average(df, args.column, args.r)
+last_value = av.iat[-1]
 
-with open(dat_file) as file:
-    lines = file.read()
+if args.OML:
+    comparison_value = l.OML_current(geometry, electron, V=voltages[0])
 
-density = float(re.search(r'\s+ne\s*=\s*(\S*)', lines).groups()[0])
-temperature = float(re.search(r'\s+te\s*=\s*(\S*)', lines).groups()[0])
-voltages = re.search(r'\$begin sc_fixedPot\s*(\S*)\s*(\S*)', lines)
-voltages = list(map(float, voltages.groups()))
+if args.FL:
+    comparison_value = l.finite_length_current(geometry, electron, V=voltages[0])
 
-elec = l.Electron(n=density, eV=temperature)
-I_OML = l.OML_current(l.Sphere(r=0.5*elec.debye), elec, V=voltages[0])
+geometry_str = "cylinder" if isinstance(geometry, l.Cylinder) else "sphere"
 
-print("Temperature:    {:.0f} K ({:.3g} eV)".format(elec.T, elec.eV))
-print("Density:        {:.3g} /m^3".format(elec.n))
-print("Debye length:   {:.3g} mm".format(elec.debye*1e3))
+print("Geometry:           {}".format(geometry_str))
+print("Radius:             {:.1f} debye lengths".format(geometry.r/electron.debye))
+if geometry_str=="cylinder":
+        print("Length:             {:.1f} debye lengths".format(geometry.l/electron.debye))
+print("Temperature:        {:.0f} K ({:.3g} eV)".format(electron.T, electron.eV))
+print("Density:            {:.3g} /m^3".format(electron.n))
+print("Debye length:       {:.3g} mm".format(electron.debye*1e3))
+print()
 
-df = pd.read_csv(hst_file, sep='\s+', skiprows=2, names=column_names, index_col=0)
+print("Last plotted value: {:.3g}".format(last_value))
 
-# Add new column sc_i_tot for total collected spacecraft current
-df = df.assign(sc_i_tot=lambda a: a.sc_i_0 + a.sc_i_1)
+if args.OML or args.FL:
+    print("Comparsion current: {:.3g}".format(comparison_value*1e6))
+    print("Error:              {:.2f}%".format(100*(last_value-comparison_value)/comparison_value, "%"))
+    plt.axhline(comparison_value, linestyle='--', color='k', label='Comparison')
 
-tau = 1e-6 # relaxation time in seconds
-delta_t = df.time[1]-df.time[0]
-alpha = 1-np.exp(-delta_t/tau)
-
-# Add new columns for exponential moving average
-for col in ['sc_i_0', 'sc_i_1', 'sc_i_tot']:
-    df = df.assign(**{col+'_av': lambda a: a[col].ewm(alpha=alpha).mean()})
-
-
-I_PT = df.sc_i_tot_av.iat[-1]
-
-print("OML current:    {:.3g} uA".format(I_OML*1e6))
-print("PTetra current: {:.3g} uA".format(I_PT*1e6))
-print("Error:          {:.2}%".format(100*(I_PT-I_OML)/I_OML, "%"))
-
-plt.plot(df.time*1e6, df.sc_i_tot*1e6, '#ccc')
-plt.axhline(I_OML*1e6, linestyle='--', color='k', label='OML')
-plt.plot(df.time*1e6, df.sc_i_tot_av*1e6, label='PTetra')
+plt.plot(df.time*1e6, df[args.column], '#ccc', zorder=-100, label='Raw')
+plt.plot(df.time*1e6, av, label=r'Averaged ($\tau={:g}\,\mathrm{{\mu s}}$)'.format(args.r*1e6))
 plt.xlabel('Time [us]')
-plt.ylabel('Current [uA]')
+plt.ylabel('Quantity: {}'.format(args.column))
+# plt.ylabel('Current [A]')
 plt.legend()
 plt.show()
