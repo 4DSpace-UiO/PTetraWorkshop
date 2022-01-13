@@ -181,7 +181,7 @@ Create an alias of the executable by adding the following line at the end of you
 alias paraview='~/ParaView-5.10.0-MPI-Linux-Python3.9-x86_64/bin/paraview'
 ```
 ```bash
-source ~/.bash_profile
+source ~/.bashrc
 ```
 #### Installing on macOS
 Download the installer for macOS.
