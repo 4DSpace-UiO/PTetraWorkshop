@@ -11,3 +11,4 @@
 .DS_Store
 MPI_V50i
 msh2topo
+**__pycache__

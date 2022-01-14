@@ -8,12 +8,20 @@ import numpy as np
 import matplotlib.pyplot as plt
 import langmuir as l
 from funcs import *
-from argparse import ArgumentParser
+from argparse import ArgumentParser, RawDescriptionHelpFormatter as formatter
 
-parser = ArgumentParser(description="Plotting tool for PTetra workshop")
+description="""
+Plotting tool for PTetra workshop, used to plot a column in pictetra.hst.
+
+To plot one of the columns starting with sc, append an index, e.g., sc_i_0 for
+the current collected by the first spacecraft component, sc_i_1 for the second,
+and so on. sc_i_tot is the total current collected by all components.
+"""
+
+parser = ArgumentParser(description=description, formatter_class=formatter)
 parser.add_argument('folder', help='Folder to PTetra simulation')
-parser.add_argument('column', default='sc_i_tot', nargs='?', help='Which column of pictetra.hst to plot')
-parser.add_argument('-r', metavar='tau', type=float, default=1e-7, help='Relaxation time')
+parser.add_argument('column', default='sc_i_tot', nargs='?', help='Which column of pictetra.hst to plot (default: sc_i_tot)')
+parser.add_argument('-r', metavar='tau', type=float, default=1e-7, help='Relaxation time (default: 1e-7)')
 parser.add_argument('--OML', action='store_true', help='Compare current with OML theory')
 parser.add_argument('--FL', action='store_true', help='Compare current with finite-length theory')
 args = parser.parse_args()
