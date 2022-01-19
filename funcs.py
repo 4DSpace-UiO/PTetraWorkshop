@@ -39,7 +39,11 @@ def read_hst(folder_name):
 def parse_parameters(folder_name):
     """
     Parses geometry and plasma parameters from folder name and the pictetra.dat
-    file inside it, and returns a geometry and Species object from Langmuir.
+    file inside it, and returns a geometry and Species object from Langmuir, as
+    well as the voltages according to pictetra.dat. Beware that only the
+    electron species is included, and that the list of voltages is simply read
+    from the sc_fixedPot entry in pictetra.dat. Thus, the voltages will not be
+    correct for floating potential simulations.
 
     Example:
 
