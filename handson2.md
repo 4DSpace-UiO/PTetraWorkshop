@@ -5,8 +5,8 @@ members, but let each member run at least one simulation (each simulation can
 be run by several members if you wish). The simulations are a bit
 time-consuming, so start early.
 
-Below is a description of the sphere and cylinder assignments. After that
-follow information useful to both groups.
+Below is a description of the sphere and cylinder assignments. The information
+below that is useful to both groups.
 
 ## Sphere assignment
 
@@ -14,8 +14,8 @@ Neglect the effect of the magnetic field of the Earth. Instead of simulating
 true atomic oxygen, which has a mass of 16 amu and is the predominant species
 of the F-layer, we will use a reduced ion mass of 1/16 amu in order to speed up
 computations. A representative orbital velocity is 7000 m/s, but increase this
-to account for the reduced ion mass. Carry out five simulations of the sphere,
-where
+so you preserve the Mach number when reducing the ion mass. Carry out five
+simulations of the sphere, where
 
 1. it is biased to 1V
 2. it is biased to 2V
@@ -47,8 +47,8 @@ Save diagnostic output every 100th timestep.
 
 Then, repeat the third simulation, but with a drift velocity perpendicular to
 the cylinder. A representative orbital velocity is 7000 m/s, but increase this
-to account for the reduced ion mass. Save diagnostic output every 10th
-timestep.
+to preserve the Mach number when reducing the ion mass. Save diagnostic output
+every 10th timestep.
 
 ## Other parameters
 
@@ -62,10 +62,10 @@ Also, try to guess the answer to the following questions:
 - How long will it take to reach steady-state, i.e., how long should the simulation run (in microseconds)?
 - How many simulation particles would you use? And what is the corresponding statistical weight?
 
-Simulation control parameters and numerical parameters not relating to these
-two questions are probably fine, at least to begin with. You will get good
-suggestions to answers before you proceed, but try doing one of the simulations
-with your own guessed numbers.
+Post your suggestions on your group's Slack channel, and you will get the
+numbers you are to use from us. Simulation control parameters and numerical
+parameters not relating to these two questions or the frequency of diagnostic
+output are probably fine, at least to begin with.
 
 ## Inspecting the simulations
 
@@ -79,7 +79,7 @@ that the simulations are/have been running correctly. Use the attached script
 ```
 
 The `--OML` and `--FL` flags allow you to compare the simulations with OML or
-finite-length theory, respectively.
+finite length theory, respectively.
 
 ## Continue the simulations later
 
@@ -92,7 +92,9 @@ touch .quit
 ```
 
 PTetra will complete the time-step, and save restart files named
-`pictetra<timestep>_<processor>.rdm`. To continue the simulations, remove the
+`pictetra<timestep>_<processor>.rdm`.
+
+To continue the simulations, remove the
 `.quit` file:
 
 ```batch
