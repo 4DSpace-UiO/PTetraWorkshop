@@ -42,6 +42,14 @@ There will be three or four sessions, first with a presentation followed by some
 
 **Time**: 15:00 - 17:00 CET
 
+- **Session 1 (25.01.2022)**: 
+
+| Time              | Talk/assignmet                                                           |                                                                                                                  |
+|-------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| 15:00 - 15:30 CET | [Introduction to the PTetra Workshop](lectures/introduction.pdf) (video) | [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)) |
+| 15:30 - 17:00 CET | Mesh generation with Gmsh                                        (video) | [Dr. Sayan Adhikari, UiO, Norway](https://www.mn.uio.no/fysikk/english/people/aca/sadhi/index.html))             |
+|                   | [Hands-on, part1](handson1.md)                                           |                                                                                                                  |
+
 - **Session 1**: 
   - Introduction to the PTetra Workshop and description of case studies (by [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)), 25.01.2022, 15:00 - 15:30 CET
   - Mesh generation with Gmsh (by [Dr. Sayan Adhikari, UiO, Norway](https://www.mn.uio.no/fysikk/english/people/aca/sadhi/index.html)), 25.01.2022, 15:30 - 17:00 CET
