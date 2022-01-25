@@ -42,24 +42,35 @@ There will be three or four sessions, first with a presentation followed by some
 
 **Time**: 15:00 - 17:00 CET
 
-- **Session 1 (25.01.2022)**: 
+**Session 1 (25.01.2022)**: 
+
+| Time              | Talk/assignmet                                                           |                                                                                                                 |
+|-------------------|--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| 15:00 - 15:30 CET | [Introduction to the PTetra Workshop](lectures/introduction.pdf) (video) | [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en) |
+| 15:30 - 17:00 CET | Mesh generation with Gmsh                                        (video) | [Dr. Sayan Adhikari, UiO, Norway](https://www.mn.uio.no/fysikk/english/people/aca/sadhi/index.html)             |
+|                   | [Hands-on, part1](handson1.md)                                           |                                                                                                                 |
+
+**Session 2 (27.01.2022)**: 
 
 | Time              | Talk/assignmet                                                           |                                                                                                                  |
 |-------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| 15:00 - 15:30 CET | [Introduction to the PTetra Workshop](lectures/introduction.pdf) (video) | [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)) |
-| 15:30 - 17:00 CET | Mesh generation with Gmsh                                        (video) | [Dr. Sayan Adhikari, UiO, Norway](https://www.mn.uio.no/fysikk/english/people/aca/sadhi/index.html))             |
-|                   | [Hands-on, part1](handson1.md)                                           |                                                                                                                  |
+| 15:00 - 17:00 CET | Introduction to PIC and PTetra (video)                                   | [Prof. Richard Marchand, University of Alberta, Edmonton, Canada](https://sites.ualberta.ca/~rmarchan/)          |
+|                   | Hands-on, part2                                                          |                                                                                                                  |
 
-- **Session 1**: 
-  - Introduction to the PTetra Workshop and description of case studies (by [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)), 25.01.2022, 15:00 - 15:30 CET
-  - Mesh generation with Gmsh (by [Dr. Sayan Adhikari, UiO, Norway](https://www.mn.uio.no/fysikk/english/people/aca/sadhi/index.html)), 25.01.2022, 15:30 - 17:00 CET
-- **Session 2**:
-  - Introduction to PIC and simulations with PTetra (by [Prof. Richard Marchand, University of Alberta, Edmonton, Canada](https://sites.ualberta.ca/~rmarchan/) ), 27.01.2022, 15:00 - 17:00 CET
-- **Session 3** (maybe):
-  - More about PTetra (by [Prof. Richard Marchand, University of Alberta, Edmonton, Canada](https://sites.ualberta.ca/~rmarchan/) ), 01.02.2022, 15:00 - 16:00 CET
-  - Introduction to HPC and demonstration of a typical PTetra run on HPCs (by [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)), 01.02.2022, 16:00 - 17:00 CET
-- **Session 4**:
-  - Post-processing, visualization with ParaView, and comparison with the Langmuir library (by [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)), 03.02.2022, 15:00 - 17:00 CET
+**Session 3 (01.02.2022)**: 
+
+| Time              | Talk/assignmet                                                           |                                                                                                                  |
+|-------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| 15:00 - 16:00 CET | Introduction to PIC and PTetra, continued (video)                        | [Prof. Richard Marchand, University of Alberta, Edmonton, Canada](https://sites.ualberta.ca/~rmarchan/)          |
+| 16:00 - 17:00 CET | Using supercomputers                                                     | [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)  |
+|                   | Available for support                                                    |                                                                                                                  |
+
+**Session 4 (03.02.2022)**: 
+
+| Time                | Talk/assignmet                                                                  |                                                                                                                    |
+| ------------------- | --------------------------------------------------------------------------      | ------------------------------------------------------------------------------------------------------------------ |
+| 15:00 - 17:00 CET   | Post-processing, the Langmuir library, and which parameters to simulate (video) | [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)    |
+|                     | Hands-on, part 3                                                                |                                                                                                                    |
 
 ## Prerequisites
 
