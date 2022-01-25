@@ -13,7 +13,12 @@ The object has the following dimensions:
 - Sphere: Radius of 0.5 electron Debye length
 - Cylinder: Radius of 0.2 electron Debye lengths, and a length of 10 electron Debye lengths
 
-You may find the files in the Geometry folder helpful to start with.
+You may find the files in the Geometry folder helpful to start with. Let the
+outer boundary be of the same shape as the object, but extending 10 electron
+Debye lengths beyond the object in every direction. The resolution on the outer
+boundary can be taken to be 1.5 electron Debye lengths, whereas on the inner
+boundary it should be a fifth of the radius.
+<!--
 
 Try to guess the answer to the following questions:
 
@@ -23,6 +28,7 @@ Try to guess the answer to the following questions:
 Post your answers on your group's Slack channel, and we will provide you with
 reasonable numbers that you are to use in the actual mesh.
 
+-->
 Let the lower and upper half of the object be two distinct physical groups,
 such that different voltages can be assigned to them in PTetra.
 
