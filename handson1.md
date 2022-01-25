@@ -17,20 +17,9 @@ You may find the files in the Geometry folder helpful to start with. Let the
 outer boundary be of the same shape as the object, but extending 10 electron
 Debye lengths beyond the object in every direction. The resolution on the outer
 boundary can be taken to be 1.5 electron Debye lengths, whereas on the inner
-boundary it should be a fifth of the radius.
-<!---
-
-Try to guess the answer to the following questions:
-
-- How large do you think the outer boundary needs to be?
-- What resolution do you need on the inner and outer boundary?
-
-Post your answers on your group's Slack channel, and we will provide you with
-reasonable numbers that you are to use in the actual mesh.
-
---->
-Let the lower and upper half of the object be two distinct physical groups,
-such that different voltages can be assigned to them in PTetra.
+boundary it should be a fifth of the radius. Let the lower and upper half of
+the object be two distinct physical groups, such that different voltages can be
+assigned to them in PTetra.
 
 The mesh will be used for simulations in the next assignment. Although each
 group only needs one mesh (to begin with), we encourage all participants to try
