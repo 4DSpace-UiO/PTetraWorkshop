@@ -28,7 +28,7 @@ F77 = gfortran
 ##AR = ar -rcv 
 # OPT = -c 
 # OPT = -c -static -64 -mips4 -O3 -r10000
-OPT = -c -O -Wall -std=legacy 
+OPT = -c -O -Wall -std=legacy -fPIE 
 LIB = libskit.a
 
 # Cray options
