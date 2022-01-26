@@ -100,4 +100,15 @@ gmsh sphere_0.5R.geo
 ``` 
 It should open up a window like the following,
 <img width="720" alt="gmsh1" src="https://user-images.githubusercontent.com/11753189/151257062-0be27bb5-54e4-4284-b146-98c8ada49ecd.png">
-
+```bash
+├── BLAS-3.10.0
+│   ├── CMAKE
+│   │   ├── CheckLAPACKCompilerFlags.cmake
+│   │   ├── PreventInBuildInstalls.cmake
+│   │   └── PreventInSourceBuilds.cmake
+│   ├── CMakeLists.txt
+│   ├── Makefile
+│   ├── TESTING
+│   │   ├── CMakeLists.txt
+│   │   ├── Makefile
+```
