@@ -145,3 +145,28 @@ Choose `Surface filling` from the left menu and select the first arc on your out
 
 <img width="720" alt="gmsh8" src="https://user-images.githubusercontent.com/11753189/151262753-61566520-0b81-4eac-8445-9cbbf624500d.png">
 <img width="720" alt="gmsh9" src="https://user-images.githubusercontent.com/11753189/151262773-0a16e64b-c2ab-431f-a589-06ebfa27d461.png">
+
+Now, repeat the process for all the curved surfaces on the outer sphere. The final product should look like,
+
+<img width="720" alt="gmsh10" src="https://user-images.githubusercontent.com/11753189/151263014-2e32e6f7-1c54-437b-b72f-381dd5178cc7.png">
+
+Next, repeat the same for the inner sphere. Remember to zoom in before you select the arcs to form the surface.
+
+<img width="720" alt="gmsh11" src="https://user-images.githubusercontent.com/11753189/151263413-2025b6b5-4885-4754-afc1-05eaf550b369.png">
+<img width="720" alt="gmsh12" src="https://user-images.githubusercontent.com/11753189/151263429-5956d28f-3b0d-40d2-8a35-87819ef11ca7.png">
+
+Now repeat the same process for all the curved surfaces of the inner sphere. The final product should look like,
+
+<img width="720" alt="gmsh13" src="https://user-images.githubusercontent.com/11753189/151263647-e22418d2-272b-4c31-a93e-11037662bc87.png">
+
+
+Next,
+#### Volume
+
+Choose `Volume` from the left menu and select the dotted curved surface line on the outer sphere first followed by the dotted curved surface lines on the inner sphere. Press `E` to end the selection. In the end the you should be able to see a `yellow` round ball at the centre.
+
+<img width="720" alt="gmsh14" src="https://user-images.githubusercontent.com/11753189/151264252-080e7494-91df-48a2-93fc-55a81569ecc3.png">
+<img width="720" alt="gmsh15" src="https://user-images.githubusercontent.com/11753189/151264270-7d358b1f-7be3-49c8-b532-8b4c52811685.png">
+
+
+
