@@ -111,7 +111,9 @@ First rotate your geometry with a view where you can see the different planes.
 
 <img width="720" alt="gmsh3" src="https://user-images.githubusercontent.com/11753189/151258741-c10d08fe-bf73-4d7a-84ab-85997d25178d.png">
 
-Next, choose `Circle arc` and select the first point on your outer sphere to make a arc. Then the centre of the sphere followed by the end point of the arc.
+### Elemetary entities
+#### Circle arc
+Next, choose `Circle arc` from the left menu and select the first point on your outer sphere to make a arc. Then the centre of the sphere followed by the end point of the arc.
 **Note:**
 ```geo
 Circle(id) = {start, center, end};
@@ -135,3 +137,11 @@ Now, try to connect all the points forming arcs on the inner sphere (probe). The
 <img width="720" alt="gmsh7" src="https://user-images.githubusercontent.com/11753189/151261082-140f43ac-ef7a-404e-9622-6b15626deee7.png">
 
 Now, press `q` to come out of the `Circle arc` action.
+
+Next,
+#### Surface filling
+
+Choose `Surface filling` from the left menu and select the first arc on your outer sphere. Then, continue to select the next two arc forming a curve surface segment of a sphere. Finally, end the selection by pressing the key `E` on your keyboard. After pressing `E`, you should be able to see a faint dotted curve forming the surface you just created.
+
+<img width="720" alt="gmsh8" src="https://user-images.githubusercontent.com/11753189/151262753-61566520-0b81-4eac-8445-9cbbf624500d.png">
+<img width="720" alt="gmsh9" src="https://user-images.githubusercontent.com/11753189/151262773-0a16e64b-c2ab-431f-a589-06ebfa27d461.png">
