@@ -5,8 +5,8 @@ members, but let each member run at least one simulation (each simulation can
 be run by several members if you wish). The simulations are a bit
 time-consuming, so start early.
 
-Below is a description of the sphere and cylinder assignments. The information
-below that is useful to both groups.
+Below is a description of the sphere and cylinder assignments. After that
+follows instructions useful to both groups.
 
 ## Sphere assignment
 
@@ -50,38 +50,92 @@ the cylinder. A representative orbital velocity is 7000 m/s, but increase this
 to preserve the Mach number when reducing the ion mass. Save diagnostic output
 every 10th timestep.
 
-## Other parameters
+## Setting up a new simulation
 
-A sample input file is available as `Sphere_0.5R_1V_1V_112kms/pictetra.dat`.
-You do not have to make any changes to the injection parameters, solar
-parameters, charge exchange parameters or reflection parameters. Pay attention
-to the plasma parameters.
-
-Also, try to guess the answer to the following questions:
-
-- How long will it take to reach steady-state, i.e., how long should the simulation run (in microseconds)?
-- How many simulation particles would you use? And what is the corresponding statistical weight?
-
-Post your suggestions on your group's Slack channel, and you will get the
-numbers you are to use from us. Simulation control parameters and numerical
-parameters not relating to these two questions or the frequency of diagnostic
-output are probably fine, at least to begin with.
-
-## Inspecting the simulations
-
-While running simulations it may be useful to run some diagnostic to ensure
-that the simulations are/have been running correctly. Use the attached script
-`plot.py` to plot the current collected by the object, e.g.,
+First, make sure you're conda environment is active:
 
 ```batch
-./plot.py Sphere_0.5R_1V_1V_112kms --OML
-./plot.py Cylinder_0.2R_10L_1V_1V_0kms --FL
+conda activate ptetra
 ```
 
-The `--OML` and `--FL` flags allow you to compare the simulations with OML or
-finite length theory, respectively.
+For each simulation, you need to create a subfolder inside `PTetraWorkshop`,
+for instance:
 
-## Continue the simulations later
+```batch
+$ mkdir Cylinder_0.5R_1V_1V_0kms
+```
+
+(recall the naming conventions in the
+[introduction](lectures/introduction.pdf). You will need to run PTetra from
+within this folder, so create a symlink to the PTetra executable inside the
+folder (symlinks, or symbolic links, are like shortcuts in Windows, but
+behave better):
+
+```batch
+$ cd Cylinder_0.5R_1V_1V_0kms
+$ ln -s ../MPI_V50i/mptetra
+```
+
+It is important that you execute `ln` from with the target folder when you use
+relative paths such as `../MPI_V50i/mptetra`. Otherwise the symlink will point
+to the wrong relative path.
+
+Next, PTetra will look for the mesh (converted to topo-format using msh2topo in
+[part 1](handson1.md)) in the file `meshpic.dat`. Create a symlink so PTetra
+can find it:
+
+```batch
+$ ln -s ../Geometry/cylinder_0.5R.topo meshpic.dat
+```
+
+Finally, PTetra also needs the input file `pictetra.dat`. You can copy the file
+from the example directory already in the repository:
+
+```batch
+$ cp ../Sphere_0.5R_1V_1V_112kms/pictetra.dat .
+```
+
+Next, you need to configure the simulation parameters in this file with the
+text editor of your choice in accordance to the simulation you are running.
+Documentation is available in the file, but you do not have to make any changes
+to the injection parameters, solar parameters, charge exchange parameters or
+reflection parameters. Pay attention to the plasma parameters.
+
+Also, discuss with your group, and try to answer the following questions:
+
+- How long will it take to reach steady-state, i.e., how long should the simulation run (in microseconds)?
+- How many simulation particles would you use?
+
+Post your answer on your group's Slack channel, and you will get the numbers
+you are to use from us. Simulation control parameters and numerical parameters
+not relating to these two questions or to the frequency of diagnostic output
+should be fine as they are.
+
+You can now start PTetra:
+
+```batch
+$ ./mptetra
+```
+
+From the output of PTetra, you should be able to answer (to yourselves):
+
+- What is the surface area of the physical surfaces?
+- What is the statistical weight of the simulation particles?
+
+## Starting over
+
+If a simulation for some reason is erroneous, you should delete the output files:
+
+```batch
+$ rm *.vtk *.rdm *.topo *.hst fort.20
+```
+
+and then start over. If the mesh is incorrect, you need to replace
+`meshpic.dat` with a symlink to the correct mesh, and also remove
+`alujlu.prcnd` so PTetra can recreate it. `alujlu.prcnd` stores the
+preconditioning matrix, and is mesh-dependent.
+
+## Continue the simulation later
 
 Since the simulations are a bit time-consuming, you may need to stop the
 simulations, and continue later. To stop PTetra gracefully, enter the
@@ -103,3 +157,18 @@ rm .quit
 
 Change the entry `restartfrom` in `pictetra.dat` to point to the respective
 restart file(s) and start PTetra as usual.
+
+## Inspecting the simulations
+
+While or after running simulations, it may be useful to run some diagnostics to
+ensure that the simulations are correct. Use the attached script `plot.py` to
+plot the current collected by the object, e.g.,
+
+```batch
+./plot.py Sphere_0.5R_1V_1V_112kms --OML
+./plot.py Cylinder_0.2R_10L_1V_1V_0kms --FL
+```
+
+The `--OML` and `--FL` flags allow you to compare the simulations with OML
+theory (most relevant for the spherical assignment) or finite length theory
+(for cylinders), respectively.
