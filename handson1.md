@@ -24,3 +24,72 @@ assigned to them in PTetra.
 The mesh will be used for simulations in the next assignment. Although each
 group only needs one mesh (to begin with), we encourage all participants to try
 creating this mesh, asking their group for help before asking the organizers.
+
+## Step by step guide to generate mesh for spherical probe
+First open the ``sphere_0.5R.geo`` file using any of your text editor. We are going to use ``Vim`` as text editor throughout this guide. Feel free to use your preferred editors like Atom, gedit, nano if you feel comfortable. 
+```bash
+vim sphere_0.5R.geo
+```
+It should look like,
+```geo
+// STEP 1: SET VARIABLES
+
+debye = 0.00690; // Electron debye length for n=1e11 and T=1000
+r = 0.5*debye;   // Inner radius
+R = TDB;         // Outer radius
+Res = TDB;       // Resolution on outer boundary
+res = TDB;       // Resolution on inner boundary
+
+// STEP 2: PLACE POINTS (0D ENTITIES)
+
+// Center
+Point(1) = {0, 0, 0, Res};
+
+// Outer boundary
+Point(2) = {R, 0, 0, Res};
+Point(3) = {0, R, 0, Res};
+Point(4) = {0, 0, R, Res};
+Point(5) = {-R, 0, 0, Res};
+Point(6) = {0, -R, 0, Res};
+Point(7) = {0, 0, -R, Res};
+
+// Inner boundary
+Point(8) = {r, 0, 0, res};
+Point(9) = {0, r, 0, res};
+Point(10) = {0, 0, r, res};
+Point(11) = {-r, 0, 0, res};
+Point(12) = {0, -r, 0, res};
+Point(13) = {0, 0, -r, res};
+```
+Change the radius and other parameters (as well as TDB) to your problem specific values. For the demonstration we are plannig to design a spherical probe with radius 0.3**debye** length.
+```geo
+// STEP 1: SET VARIABLES
+
+debye = 0.00690; // Electron debye length for n=1e11 and T=1000
+r = 0.3*debye;   // Inner radius
+R = r+10*debye;         // Outer radius
+Res = 1.5*debye;       // Resolution on outer boundary
+res = r/5;       // Resolution on inner boundary
+
+// STEP 2: PLACE POINTS (0D ENTITIES)
+
+// Center
+Point(1) = {0, 0, 0, Res};
+
+// Outer boundary
+Point(2) = {R, 0, 0, Res};
+Point(3) = {0, R, 0, Res};
+Point(4) = {0, 0, R, Res};
+Point(5) = {-R, 0, 0, Res};
+Point(6) = {0, -R, 0, Res};
+Point(7) = {0, 0, -R, Res};
+
+// Inner boundary
+Point(8) = {r, 0, 0, res};
+Point(9) = {0, r, 0, res};
+Point(10) = {0, 0, r, res};
+Point(11) = {-r, 0, 0, res};
+Point(12) = {0, -r, 0, res};
+Point(13) = {0, 0, -r, res};
+```
+Save the file in ``Vim`` using the following sequence `Esc`,`:`,`w`,`q`,`!`,`Enter`.
