@@ -26,7 +26,7 @@ group only needs one mesh (to begin with), we encourage all participants to try
 creating this mesh, asking their group for help before asking the organizers.
 
 ## Step by step guide to generate mesh for spherical probe
-First open the ``sphere_0.5R.geo`` file using any of your text editor. We are going to use ``Vim`` as text editor throughout this guide. Feel free to use your preferred editors like Atom, gedit, nano if you feel comfortable. 
+First open the ``sphere_0.5R.geo`` file using any of your text editor. We are going to use ``Vim`` as text editor throughout this guide. Feel free to use your preferred editors like Atom, gedit, nano if you feel comfortable. Make sure you are inside the `Geometry` directory before you do so. You can check it by typing the command `pwd`. 
 ```bash
 vim sphere_0.5R.geo
 ```
@@ -61,7 +61,7 @@ Point(11) = {-r, 0, 0, res};
 Point(12) = {0, -r, 0, res};
 Point(13) = {0, 0, -r, res};
 ```
-Change the radius and other parameters (as well as TDB) to your problem specific values. For the demonstration we are plannig to design a spherical probe with radius 0.3**debye** length.
+Change the radius and other parameters (as well as TDB) to your problem specific values. For the demonstration we are plannig to design a spherical probe with radius 0.5x**debye** length. To be able to edit the file using `Vim`, press `I` or the `Insert` key on your keyboard.
 ```geo
 // STEP 1: SET VARIABLES
 
@@ -93,3 +93,8 @@ Point(12) = {0, -r, 0, res};
 Point(13) = {0, 0, -r, res};
 ```
 Save the file in ``Vim`` using the following sequence `Esc`,`:`,`w`,`q`,`!`,`Enter`.
+
+Next, open this `.geo` file by using the following command in your terminal,
+```bash
+gmsh sphere_0.5R.geo
+``` 
