@@ -111,6 +111,7 @@ First rotate your geometry with a view where you can see the different planes.
 
 <img width="720" alt="gmsh3" src="https://user-images.githubusercontent.com/11753189/151258741-c10d08fe-bf73-4d7a-84ab-85997d25178d.png">
 
+## Geometry
 ### Elemetary entities
 #### Circle arc
 Next, choose `Circle arc` from the left menu and select the first point on your outer sphere to make a arc. Then the centre of the sphere followed by the end point of the arc.
@@ -168,5 +169,30 @@ Choose `Volume` from the left menu and select the dotted curved surface line on 
 <img width="720" alt="gmsh14" src="https://user-images.githubusercontent.com/11753189/151264252-080e7494-91df-48a2-93fc-55a81569ecc3.png">
 <img width="720" alt="gmsh15" src="https://user-images.githubusercontent.com/11753189/151264270-7d358b1f-7be3-49c8-b532-8b4c52811685.png">
 
+Press `Q` to abort and exit the action.
 
+Next, 
+
+### Physical groups
+#### Surface
+Expand the `Physical groups` tree on the left menu to see available groups. Choose `Surface` and select all the curved sufaces on the outer sphere by clicking on the dotted lines. Press `E` to end the selection.
+<img width="720" alt="gmsh16" src="https://user-images.githubusercontent.com/11753189/151265002-bc26354c-b639-4be1-9551-64a4bb1e5851.png">
+
+Now, repeat the same for the inner sphere. Complete the selection by pressing `E` in the end.
+
+<img width="720" alt="gmsh17" src="https://user-images.githubusercontent.com/11753189/151265321-51b6602d-f4d5-42c8-928d-32fbb1558456.png">
+
+Press `Q` to abort and exit the action.
+
+Note: If you need segmented biased probe. Select the top half of the inner sphere and bottom half of the sphere separately.
+
+Next,
+#### Volume
+Choose `Volume` and select the yellow sphere at the centre. After selection the `Yellow` sphere becomes `Red`. Press `E` to end the selection. Finally, press `Q` to abort and exit the action.
+
+<img width="720" alt="gmsh18" src="https://user-images.githubusercontent.com/11753189/151265821-89f97506-32e1-4f9a-84af-bdb34a4e926c.png">
+
+So, we have now finished our `Geometry`. Next, 
+
+## Mesh 
 
