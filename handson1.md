@@ -100,15 +100,16 @@ gmsh sphere_0.5R.geo
 ``` 
 It should open up a window like the following,
 <img width="720" alt="gmsh1" src="https://user-images.githubusercontent.com/11753189/151257062-0be27bb5-54e4-4284-b146-98c8ada49ecd.png">
-```bash
-├── BLAS-3.10.0
-│   ├── CMAKE
-│   │   ├── CheckLAPACKCompilerFlags.cmake
-│   │   ├── PreventInBuildInstalls.cmake
-│   │   └── PreventInSourceBuilds.cmake
-│   ├── CMakeLists.txt
-│   ├── Makefile
-│   ├── TESTING
-│   │   ├── CMakeLists.txt
-│   │   ├── Makefile
+Click on the left menu in the following order: `Geometry`->`Elementary entities`->`Add`. At the end of this your left window should look like the following,
+<img width="720" alt="gmsh2" src="https://user-images.githubusercontent.com/11753189/151258227-b0158c98-d13c-462b-a501-7e609e749f23.png">
+:warning: From now onwards in this section our mostly used tools will be `Circle arc`, `Surface filling`, and `Volume`. 
+
+First rotate your geometry with a view where you can see the different planes. 
+<img width="720" alt="gmsh3" src="https://user-images.githubusercontent.com/11753189/151258741-c10d08fe-bf73-4d7a-84ab-85997d25178d.png">
+Next, choose `Circle arc` and select the first point on your outer sphere to make a arc. Then the centre of the sphere followed by the end point of the arc.
+:heavy_exclamation_mark: 
+```geo
+Circle(id) = {start, center, end};
+id: unique id assigned to each element with a specific type start, end:startandendpointsofanarc
+center: center of the arc/circle
 ```
