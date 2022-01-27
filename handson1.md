@@ -210,6 +210,15 @@ Now, click on **3D** to generate **3D** volume mesh.
 
 <img width="720" alt="gmsh20" src="https://user-images.githubusercontent.com/11753189/151266986-53b376ef-a8ea-411f-91d7-f49f7ab890cf.png">
 
+To understand the quality of the mesh, Go to the `Tools` menu on the top left corner and click on `Statistics`.
+<img width="351" alt="mesh_statistics" src="https://user-images.githubusercontent.com/11753189/151267232-d8a0d4e8-a208-459f-9f91-b88a47e1c3ba.png">
+<img width="299" alt="stats_details" src="https://user-images.githubusercontent.com/11753189/151267252-4d83c054-fd8d-4998-8c71-64721043c9ec.png">
+
+Thin cells lead to less accurate solutions and slower convergence. The value of quality factor, gamma indicates how regular the cells are. Gamma(γ) = 1 represents a perfect equilateral, and gamma = 0 represents a degenerate cell. The higher the average, better the mesh quality. For simple geometries, the lowest gamma value could be 0.3 or above but for complicated geometries it also can be less than 0.05. 
+
+You can also plot the statistics data.
+<img width="720" alt="mesh_q_plot" src="https://user-images.githubusercontent.com/11753189/151267456-84567d36-5251-44db-8a18-b326f31ba907.png">
+
 Now, we are all done. Let's export the mesh.
 
 
