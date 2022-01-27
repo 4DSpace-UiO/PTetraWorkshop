@@ -196,3 +196,20 @@ So, we have now finished our `Geometry`. Next,
 
 ## Mesh 
 
+Go to the `Tools` menu on the top left corner and click on `Options`. Then click on Mesh on the left and open `Advanced` tab. Check the box named `Optimize quality of tetrahedra with Netgen`. Remember to click on `Save Options as Defaults` before closing `Gmsh`.
+
+<img width="353" alt="netgen_gmsh_1" src="https://user-images.githubusercontent.com/11753189/151267051-e852651b-1496-4d91-a199-2b167be99bca.png">
+<img width="527" alt="netgen_gmsh_2" src="https://user-images.githubusercontent.com/11753189/151267059-4e8b6d19-32de-436a-ae3e-13a17e745460.png">
+
+
+Now, to generate **2D** mesh, go to the left panel and click on `Mesh` and click on **2D**.It will generate 2D Mesh on the surfaces that we declared.
+
+<img width="720" alt="gmsh19" src="https://user-images.githubusercontent.com/11753189/151266872-9c83c88d-2e78-40b5-9365-63527d66de95.png">
+
+Now, click on **3D** to generate **3D** volume mesh.
+
+<img width="720" alt="gmsh20" src="https://user-images.githubusercontent.com/11753189/151266986-53b376ef-a8ea-411f-91d7-f49f7ab890cf.png">
+
+Now, we are all done. Let's export the mesh.
+
+
