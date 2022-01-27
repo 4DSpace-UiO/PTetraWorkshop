@@ -55,7 +55,7 @@ There will be three or four sessions, first with a presentation followed by some
 | Time              | Talk/assignmet                                                           |                                                                                                                  |
 |-------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
 | 15:00 - 17:00 CET | Introduction to PIC and PTetra (video)                                   | [Prof. Richard Marchand, University of Alberta, Edmonton, Canada](https://sites.ualberta.ca/~rmarchan/)          |
-|                   | Hands-on, part2                                                          |                                                                                                                  |
+|                   | [Hands-on, part2](handson2.md)                                           |                                                                                                                  |
 
 **Session 3 (01.02.2022)**: 
 

@@ -1,12 +1,16 @@
 # Hands-on, part 2
 
-Each group are assigned six simulations to carry out. Split them among your
-members, but let each member run at least one simulation (each simulation can
-be run by several members if you wish). The simulations are a bit
-time-consuming, so start early.
+Each group are assigned six simulations to carry out. The simulations will be
+used for post-processing in session 4 (03.02.22), so complete all six
+simulations before then. Use the Zoom breakout rooms assigned during the
+session to agree on who does which simulations. For your own learning, make
+sure that each member run at least one simulation (each simulation can be run
+by several members if you wish). The simulations are a bit time-consuming, so
+start early.
 
-Below is a description of the sphere and cylinder assignments. After that
-follows instructions useful to both groups.
+Below is a description of the sphere and cylinder assignments (depending on
+which one you're assigned). After that follows some questions to be answered
+during the Zoom event, before instructions on how to run the simulations.
 
 ## Sphere assignment
 
@@ -49,6 +53,17 @@ Then, repeat the third simulation, but with a drift velocity perpendicular to
 the cylinder. A representative orbital velocity is 7000 m/s, but increase this
 to preserve the Mach number when reducing the ion mass. Save diagnostic output
 every 10th timestep.
+
+## Questions for Zoom discussion
+
+In the Zoom break discuss the following questions with your group, and try to
+answer to arrive at an answer.
+
+- How long will it take to reach steady-state, i.e., how long should the simulation run (in microseconds)?
+- How many simulation particles would you use?
+
+We will drop by your room and see how your doing, as well as provide you with
+the numbers you are actually to use in the simulations.
 
 ## Setting up a new simulation
 
@@ -101,15 +116,11 @@ Documentation is available in the file, but you do not have to make any changes
 to the injection parameters, solar parameters, charge exchange parameters or
 reflection parameters. Pay attention to the plasma parameters.
 
-Also, discuss with your group, and try to answer the following questions:
-
-- How long will it take to reach steady-state, i.e., how long should the simulation run (in microseconds)?
-- How many simulation particles would you use?
-
-Post your answer on your group's Slack channel, and you will get the numbers
-you are to use from us. Simulation control parameters and numerical parameters
-not relating to these two questions or to the frequency of diagnostic output
-should be fine as they are.
+Under simulation control parameters and numerical parameter, the number of
+simulation particles and the physical end time of the simulations needs to be
+edited according to the answers of your Zoom questions. The frequency of
+diagnostic output should also be edited according to your assignment's
+description. Other parameters under these categories are fine.
 
 You can now start PTetra:
 
@@ -119,7 +130,7 @@ $ ./mptetra
 
 From the output of PTetra, you should be able to answer (to yourselves):
 
-- What is the surface area of the physical surfaces?
+- What is the surface area of the physical surfaces created in Gmsh?
 - What is the statistical weight of the simulation particles?
 
 ## Starting over
