@@ -217,8 +217,74 @@ To understand the quality of the mesh, Go to the `Tools` menu on the top left co
 Thin cells lead to less accurate solutions and slower convergence. The value of quality factor, gamma indicates how regular the cells are. Gamma(γ) = 1 represents a perfect equilateral, and gamma = 0 represents a degenerate cell. The higher the average, better the mesh quality. For simple geometries, the lowest gamma value could be 0.3 or above but for complicated geometries it also can be less than 0.05. 
 
 You can also plot the statistics data.
+
 <img width="720" alt="mesh_q_plot" src="https://user-images.githubusercontent.com/11753189/151267456-84567d36-5251-44db-8a18-b326f31ba907.png">
 
 Now, we are all done. Let's export the mesh.
 
+Go to the File menu on the top left corner and click on export. The default save as option should be `Guess from Extension(*.*)` Use `.msh` extension and choose `Version 2 ASCII` when prompts to save.
+<img width="304" alt="gmsh_menu" src="https://user-images.githubusercontent.com/11753189/151267607-8fc2de01-9dc1-4ff0-927d-3f2fb06657de.png">
 
+For our case we saved the Mesh file as `sphere_0.5R.msh`. 
+
+Now, edit `msh2topo.dat` using `Vim` or any of your text editors.
+```bash
+vim msh2topo.dat
+```
+It should look like,
+```bash
+inputFormat: 'gmsh1', 'gmsh2', 'abaqus1', abaqus2' or 'spis'
+outputformat: 'Vu' or 'topo'
+&readoptions
+  inputFormat='gmsh2'
+  outputFormat='topo'
+/
+
+$begin
+nfields=0
+sphere.msh
+$end
+```
+Now replace the mesh file name to your own `sphere.msh`->`sphere_0.5R.msh`.
+```bash
+inputFormat: 'gmsh1', 'gmsh2', 'abaqus1', abaqus2' or 'spis'
+outputformat: 'Vu' or 'topo'
+&readoptions
+  inputFormat='gmsh2'
+  outputFormat='topo'
+/
+
+$begin
+nfields=0
+sphere_0.5R.msh
+$end
+```
+Then, save the file.
+Now, run `msh2topo`
+```bash
+./msh2topo
+```
+The output should look something like this,
+```bash
+call readMeshGmsh2
+ sphere_0.3R.msh
+ nv=         892
+ netot=        3789
+ ne1=           0  ne2=         232  ne4=        3557
+ i1=           0  i2=         232  i4=        3557
+ call buildNeighbours
+ i1=           1  j1=           4
+ i1=           3  j1=           4
+ i1=           7  j1=           4
+ ...           .  ...           .
+ i1=        3554  j1=           1
+ Test the mesh for duplicate neighbours
+ Test the mesh for consistent adjacency
+ call readFields
+ call outputTopo
+```
+Once it is over, you should be able see a file name `msh2topo.out`. Rename the file to a convenent one with `.topo` format.
+```bash
+mv msh2topo.out sphere_0.5R.topo
+```
+**That's all!!!**
