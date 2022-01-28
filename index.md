@@ -61,8 +61,8 @@ There will be three or four sessions, first with a presentation followed by some
 
 | Time              | Talk/assignmet                                                           |                                                                                                                  |
 |-------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| 15:00 - 16:00 CET | Introduction to PIC and PTetra, continued (video)                        | [Prof. Richard Marchand, University of Alberta, Edmonton, Canada](https://sites.ualberta.ca/~rmarchan/)          |
-| 16:00 - 17:00 CET | Using supercomputers                                                     | [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)  |
+| 15:00 - 15:45 CET | Using supercomputers for PIC                                             | [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)  |
+| 16:00 - 16:45 CET | Introduction to PIC and PTetra, continued (video)                        | [Prof. Richard Marchand, University of Alberta, Edmonton, Canada](https://sites.ualberta.ca/~rmarchan/)          |
 |                   | Available for support                                                    |                                                                                                                  |
 
 **Session 4 (03.02.2022)**: 
