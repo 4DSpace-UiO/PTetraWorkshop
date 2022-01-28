@@ -59,8 +59,8 @@ every 10th timestep.
 In the Zoom break discuss the following questions with your group, and try to
 answer to arrive at an answer.
 
-- How long will it take to reach steady-state, i.e., how long should the simulation run (in microseconds)?
-- How many simulation particles would you use?
+- How long will it take to reach steady-state, i.e., how long should the simulation run (in microseconds)? [Suggestion: 10 us]
+- How many simulation particles would you use? [Suggestion: 5 million of each species]
 
 We will drop by your room and see how your doing, as well as provide you with
 the numbers you are actually to use in the simulations.
@@ -122,6 +122,26 @@ edited according to the answers of your Zoom questions. The frequency of
 diagnostic output should also be edited according to your assignment's
 description. Other parameters under these categories are fine.
 
+In addition, to specify fixed potentials on the two halves, you must set
+`sc_fixedpotentials=.true.`. Then, the voltages are specified in the list
+`sc_fixedPot`. The voltages in `sc_fixedPot` are assigned to the physical
+groups in ascending order. For the floating potential simulation, you must set
+`sc_fixedpotentials=.false.` in order to let the potentail be self-consistently
+determined from the charging due to the plasma. In this case, `sc_nnetBias` and
+`netBias` is used to control the relative voltage between the two halves, which
+in our case, is to be zero. Since the two halve constitutes *one* circuit,
+`sc_nnetBias=1`. `netBias` is as follows:
+```
+$begin netBias
+nnodes=2
+1  0.0
+2  0.0
+$end netBias
+```
+This means that if the first physical group is zero, then so is the second
+group. It is only the *relative* voltages between the elements in `netBias`
+that matters.
+
 You can now start PTetra:
 
 ```batch
@@ -131,7 +151,8 @@ $ ./mptetra
 From the output of PTetra, you should be able to answer (to yourselves):
 
 - What is the surface area of the physical surfaces created in Gmsh?
-- What is the statistical weight of the simulation particles?
+- What is the statistical weight of the simulation particles? That is to say,
+  how many physical particles does each simulaion particle correspond to?
 
 ## Starting over
 
