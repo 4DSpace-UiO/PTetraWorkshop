@@ -77,7 +77,7 @@ For each simulation, you need to create a subfolder inside `PTetraWorkshop`,
 for instance:
 
 ```batch
-$ mkdir Cylinder_0.5R_1V_1V_0kms
+$ mkdir Cylinder_0.2R_10L_1V_1V_0kms
 ```
 
 (recall the naming conventions in the
@@ -87,7 +87,7 @@ folder (symlinks, or symbolic links, are like shortcuts in Windows, but
 behave better):
 
 ```batch
-$ cd Cylinder_0.5R_1V_1V_0kms
+$ cd Cylinder_0.2R_10L_1V_1V_0kms
 $ ln -s ../MPI_V50i/mptetra
 ```
 
