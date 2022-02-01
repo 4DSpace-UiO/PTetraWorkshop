@@ -37,7 +37,7 @@ There will be three or four sessions, first with a presentation followed by some
 **Dates**: 
 1. 25.01.2022
 2. 27.01.2022
-3. 01.02.2022 (maybe)
+3. 01.02.2022
 4. 03.02.2022
 
 **Time**: 15:00 - 17:00 CET
