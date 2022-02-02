@@ -21,8 +21,7 @@ main purpose is the study of spacecraft-environment interactions.
 ![Cylinder](https://raw.githubusercontent.com/4DSpace-UiO/PTetraWorkshop/gh-pages/cylinder.png)
 
 Disclaimer: PTetra is Prof. Richard Marchand's property, but is provided for
-the participants to use, with the belief that it will be instructive and
-useful. The correctness of the results obtained with PTetra relies in part on
+the participants to use, with the belief that it will be instructive and useful. The correctness of the results obtained with PTetra relies in part on
 the skill of the user, and in any case, we take no responsibility for your
 results. Any use of PTetra leading to publication should cite the following two
 papers:
@@ -46,8 +45,8 @@ There will be three or four sessions, first with a presentation followed by some
 
 | Time              | Talk/assignment                                                           |                                                                                                                 |
 |-------------------|--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| 15:00 - 15:30 CET | [Introduction to the PTetra Workshop](lectures/introduction.pdf) ([slide link](lectures/introduction.pdf), [video link](https://youtu.be/lB71GE-31Bc)) | [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en) |
-| 15:30 - 17:00 CET | [Mesh generation with Gmsh](lectures/Mesh_Gmsh.pdf)              ([slide link](lectures/Mesh_Gmsh.pdf), [video link](https://youtu.be/l36TCszC4UM)) | [Dr. Sayan Adhikari, UiO, Norway](https://www.mn.uio.no/fysikk/english/people/aca/sadhi/index.html)             |
+| 15:00 - 15:30 CET | Introduction to the PTetra Workshop ([slide link](lectures/introduction.pdf), [video link](https://youtu.be/lB71GE-31Bc)) | [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en) |
+| 15:30 - 17:00 CET | Mesh generation with Gmsh           ([slide link](lectures/Mesh_Gmsh.pdf), [video link](https://youtu.be/l36TCszC4UM)) | [Dr. Sayan Adhikari, UiO, Norway](https://www.mn.uio.no/fysikk/english/people/aca/sadhi/index.html)             |
 |                   | [Hands-on, part1](handson1.md)                                           |                                                                                                                 |
 
 **Session 2 (27.01.2022)**: 
@@ -70,7 +69,7 @@ There will be three or four sessions, first with a presentation followed by some
 | Time                | Talk/assignmet                                                                  |                                                                                                                    |
 | ------------------- | --------------------------------------------------------------------------      | ------------------------------------------------------------------------------------------------------------------ |
 | 15:00 - 17:00 CET   | Post-processing, the Langmuir library, and which parameters to simulate (video) | [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)    |
-|                     | Hands-on, part 3                                                                |                                                                                                                    |
+|                     | [Hands-on, part 3](handson3.md)                                                 |                                                                                                                    |
 
 ## Prerequisites
 
