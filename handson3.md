@@ -18,7 +18,7 @@ output of VTK files (e.g., the sixth simulation).
       current density.
     - Play!
 
-<img src="handson3.gif" alt="visualization" width="200%"/>
+![visualization](handson3.gif)
 
 Use Python and Langmuir to plot the IV characteristic of the object according
 to OML theory (spherical assignment) or finite length theory (cylindrical
