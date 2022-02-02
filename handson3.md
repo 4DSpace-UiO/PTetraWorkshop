@@ -2,6 +2,8 @@
 
 Play around with ParaView. Try to animate the fields.
 
+![Visualizatio](handson3.gif)
+
 Use Python and Langmuir to plot the IV characteristic of the object according
 to OML theory (spherical assignment) or finite length theory (cylindrical
 assignment) for the Oxygen plasma representative of the F-layer:
