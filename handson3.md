@@ -2,7 +2,7 @@
 
 Play around with ParaView. Try to animate the fields.
 
-![Visualizatio](handson3.gif)
+<img src="handson3.gif" alt="visualization" width="200%"/>
 
 Use Python and Langmuir to plot the IV characteristic of the object according
 to OML theory (spherical assignment) or finite length theory (cylindrical
