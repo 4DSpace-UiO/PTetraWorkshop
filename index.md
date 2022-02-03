@@ -66,11 +66,12 @@ There will be three or four sessions, first with a presentation followed by some
 
 **Session 4 (03.02.2022)**: 
 
-| Time                | Talk/assignmet                                                                  |                                                                                                                    |
-| ------------------- | --------------------------------------------------------------------------      | ------------------------------------------------------------------------------------------------------------------ |
-| 15:00 - 17:00 CET   | Post-processing, the Langmuir library, and which parameters to simulate (video) | [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)    |
-|                     | [Hands-on, part 3](handson3.md)                                                 |                                                                                                                    |
-
+| Time                | Talk/assignmet                                                                   |                                                                                                                    |
+| ------------------- | --------------------------------------------------------------------------       | ------------------------------------------------------------------------------------------------------------------ |
+| 15:00 - 15:45 CET   | Post-processing ([slide link](lectures/postprocessing.pdf), video link)          | [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)    |
+| 16:00 - 16:45 CET   | Which parameters to simulate ([slide link](lectures/parameters.pdf), video link) | [Dr. Sigvald Marholm, UiO, Norway](https://www.mn.uio.no/fysikk/english/?vrtx=person-view&uid=sigvaldm&lang=en)    |
+|                     | [Hands-on, part 3](handson3.md)                                                  |                                                                                                                    |
+ 
 ## Prerequisites
 
 - Access to a Unix/Linux machine
